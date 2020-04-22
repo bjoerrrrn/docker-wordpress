@@ -9,6 +9,4 @@ RUN pecl install redis \
 RUN { \
 		echo 'upload_max_filesize = 128M'; \
 		echo 'post_max_size = 128M'; \
-		echo 'extension=redis.so'; \
-		echo 'extension=memcached.so'; \
 	} > /usr/local/etc/php/conf.d/custom_php.ini
